@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 
 // Main routes
 import Dashboard from '../views/main/Dashboard'
-import Pickups from '../views/main/Pickups.vue'
+import Home from '../views/main/Home.vue'
 
 // Main Layout
 import DashboardLayout from '../layouts/DashboardLayout'
@@ -29,9 +29,9 @@ const routes = [
         },
       },
       {
-        path: "/pickups",
-        component: Pickups,
-        name: "Pickups",
+        path: "/home",
+        component: Home,
+        name: "Home",
         meta: {
           requiresAuth: true,
         },
